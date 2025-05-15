@@ -1,5 +1,6 @@
 # AMBER-Membrane_protein_PBRC
 Tutorial on the setup of the Purple Bacteria Reaction Center (PBRC, 3i4d) membrane protein with charmm-gui
+(Note: remember the JOB ID, you can redo from any step with Job Retriever)
 
 charmm-gui membrane-builder website:https://www.charmm-gui.org/?doc=input/membrane.bilayer
 
@@ -26,10 +27,19 @@ As for the Orientation Options, I recommend 'Run PPM 2.0' or 'Use PDB orientatio
 For the reaction center in purple bacteria, correct membrane orientation is essential because: 1)it ensures realistic lipid interactions in simulations. 2)Charge transfer and proton transfer processes are highly dependent on membrane alignment. 3)Asymmetric environments (periplasmic vs cytoplasmic) are preserved.
 ![Alt text](/figures/004.png?raw=true "Orientation")
 
+This is the visualization plot of the oriented protein:
+![Alt text](/figures/v1.png?raw=true "oriented protein")
+
 d) STEP 2
 
 In this step, we add a lipid bilayer to the system. We choose to use POPC for the membrane since Xuhui's previous study of Photosystem II used POPC.
+
+To follow the Minimum Image Convention that the cutoff distance for nonbonded interactions must be less than half the shortest box dimension, and the x and y dimensions of the box cannot be too small. We need to choose an appropriate box length to satisfy the calculation efficiency and rationality。
 ![Alt text](/figures/005.png?raw=true "membrane")
+
+This is the visualization plot of the membrane protein:
+![Alt text](/figures/v1.png?raw=true "oriented protein")
+
 
 e) STEP 3
 
@@ -39,7 +49,9 @@ In this step, we neutralize the system by adding ions.
 f) STEP 4
 
 In this step, charmm-gui will check the system (lipid penetration) automatically. We only need to click the "Next Step"
+![Alt text](/figures/007.png?raw=true "penetration")
 
 g) STEP 5
 
 In this step, charmm-gui can generate Equilibration and Dynamics Inputs for us
+![Alt text](/figures/008.png?raw=true "input")
