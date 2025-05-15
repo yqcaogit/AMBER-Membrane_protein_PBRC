@@ -6,16 +6,40 @@ charmm-gui membrane-builder website:https://www.charmm-gui.org/?doc=input/membra
 a) PDB input
 
 Input "3i4d" and click "Next Step"
+![Alt text](/figures/001.png?raw=true "input")
 
 b) PDB info
-fig002
-We only click three protein peptide chains (PDB ID "A", "B", "C") 
-fig003
-Set the system PH value to 7.4 (Spectroscopic and kinetic studies of PBRC often use buffers around pH 7.5 to mimic natural conditions while ensuring protein stability.)
 
+We only click three protein peptide chains (PDB ID "A", "B", "C") 
+![Alt text](/figures/002.png?raw=true "three chains")
+
+Set the system PH value to 7.4 (Spectroscopic and kinetic studies of PBRC often use buffers around pH 7.5 to mimic natural conditions while ensuring protein stability.)
 Regarding the protonation state, according to the PH value we use, Charmm-gui can suggest the protonation state for us. We can also use Propka or MCCE to check the protonation state.
+![Alt text](/figures/003.png?raw=true "PH and protonation")
+
+
 
 c) STEP 1
 
-As for the Orientation Options, I recommend 'Run PPM 2.0' or 'OPM'. I start with ‘Align the First Principal Axis Along Z’, but the structure does not look very vertical to the membrane.
+As for the Orientation Options, I recommend 'Run PPM 2.0' or 'Use PDB orientation'. These two can make reasonable structures. I start with ‘Align the First Principal Axis Along Z’, but the structure does not look very vertical to the membrane.
 
+For the reaction center in purple bacteria, correct membrane orientation is essential because: 1)it ensures realistic lipid interactions in simulations. 2)Charge transfer and proton transfer processes are highly dependent on membrane alignment. 3)Asymmetric environments (periplasmic vs cytoplasmic) are preserved.
+![Alt text](/figures/004.png?raw=true "Orientation")
+
+d) STEP 2
+
+In this step, we add a lipid bilayer to the system. We choose to use POPC for the membrane since Xuhui's previous study of Photosystem II used POPC.
+![Alt text](/figures/005.png?raw=true "membrane")
+
+e) STEP 3
+
+In this step, we neutralize the system by adding ions. 
+![Alt text](/figures/006.png?raw=true "ions")
+
+f) STEP 4
+
+In this step, charmm-gui will check the system (lipid penetration) automatically. We only need to click the "Next Step"
+
+g) STEP 5
+
+In this step, charmm-gui can generate Equilibration and Dynamics Inputs for us
