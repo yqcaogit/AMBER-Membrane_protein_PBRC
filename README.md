@@ -38,7 +38,7 @@ To follow the Minimum Image Convention that the cutoff distance for nonbonded in
 ![Alt text](/figures/005.png?raw=true "membrane")
 
 This is the visualization plot of the membrane protein:
-![Alt text](/figures/v1.png?raw=true "oriented protein")
+![Alt text](/figures/v2.png?raw=true "oriented protein")
 
 
 e) STEP 3
@@ -50,6 +50,9 @@ f) STEP 4
 
 In this step, charmm-gui will check the system (lipid penetration) automatically. We only need to click the "Next Step"
 ![Alt text](/figures/007.png?raw=true "penetration")
+
+The membrain protein system built with Charmm-gui:
+![Alt text](/figures/v3.png?raw=true "membrane protein")
 
 g) STEP 5
 
