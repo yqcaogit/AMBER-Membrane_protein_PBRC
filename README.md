@@ -57,4 +57,6 @@ The membrain protein system built with Charmm-gui:
 g) STEP 5
 
 In this step, charmm-gui can generate Equilibration and Dynamics Inputs for us
-![Alt text](/figures/008.png?raw=true "input")
+![Alt text](/figures/008.png?raw=true "make input")
+
+![Alt text](/figures/009.png?raw=true "inputs")
