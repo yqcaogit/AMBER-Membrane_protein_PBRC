@@ -3,7 +3,7 @@ Tutorial on the setup of the Purple Bacteria Reaction Center (PBRC, 3i4d) membra
 (Note: remember the JOB ID, you can redo from any step with Job Retriever)
 
 charmm-gui membrane-builder website:https://www.charmm-gui.org/?doc=input/membrane.bilayer
-
+JOB ID: 4790122198
 a) PDB input
 
 Input "3i4d" and click "Next Step"
@@ -40,6 +40,8 @@ To follow the Minimum Image Convention that the cutoff distance for nonbonded in
 This is the visualization plot of the membrane protein:
 ![Alt text](/figures/v2.png?raw=true "oriented protein")
 
+This is the calculated cross sectional Area:
+![Alt text](/figures/201.png?raw=true "protein section")
 
 e) STEP 3
 
